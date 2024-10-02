@@ -9,9 +9,9 @@ import blackLogo from './assets/black-logo.png'
 const App = () => {
   return (
     <>
-    <div>
+    <div class="bg:[#fafaf8]">
       <nav class="w-full h-8 my-5 ml-2 px-10 flex justify-between ">
-        <img src={blackLogo} alt="logo" class="h-5 w-auto mt-2 ml-2"/>
+        <img src={blackLogo} alt="logo" class="h-6 w-auto mt-2 ml-2"/>
         <div class="hidden md:flex space-x-5 mr-10 font-sans">
         <div class="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
             <a href="#" class="px-2 py-">Claude</a>
@@ -53,24 +53,24 @@ const App = () => {
                   <p class="text-xl m-8 text-center">Claude can perform complex cognitive tasks that go beyond simple pattern recognition or text generation</p>
               </div>
               <div class="m-4 flex flex-col items-center justify-center w-72">
-                  <img src={cap1} alt="cap1" class="h-24 w-auto"/>
+                  <img src={cap2} alt="cap1" class="h-24 w-auto"/>
                   <h1 class="mt-8 text-xl font-bold">Vision analysis</h1>
                   <p class="text-xl m-8 text-center">Transcribe and analyze almost any static image, from handwritten notes and graphs, to photographs</p>
               </div>
               <div class="m-4 flex flex-col items-center justify-center w-72">
-                  <img src={cap1} alt="cap1" class="h-24 w-auto"/>
+                  <img src={cap3} alt="cap1" class="h-24 w-auto"/>
                   <h1 class="mt-8 text-xl font-bold">Code generation</h1>
                   <p class="text-xl m-8 text-center">Start creating websites in HTML and CSS, turning images into structured JSON data, or debugging complex code bases</p>
               </div>
               <div class="m-4 flex flex-col items-center justify-center w-72">
-                  <img src={cap1} alt="cap1" class="h-24 w-auto"/>
+                  <img src={cap4} alt="cap1" class="h-24 w-auto"/>
                   <h1 class="mt-8 text-xl font-bold">Multilingual processing</h1>
                   <p class="text-xl m-8 text-center">Translate between various languages in real-time, practice grammar, or create multi-lingual content</p>
               </div>
           </div>
           </div>
 
-      <div class="flex flex-wrap items-center justify-around mt-32">
+      <div class="flex flex-wrap items-center justify-around mt-32 bg:white">
           <div class="w-[550px] m-10 font-sans">
               <h2 class="bg-orange-500 rounded-full inline px-4 py-1 text-white text-md">NEW</h2>
               <h1 class="text-3xl font-semibold mb-3 mt-3"> Introducing Claude 3.5 Sonnet </h1>
@@ -102,7 +102,7 @@ const App = () => {
                   <h1 class="text-2xl">Many-shot jailbreaking</h1>
               </div>
               <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                  <img src={why1} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
+                  <img src={why2} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                   <h3>Featured post</h3>
                   <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
               </div>
@@ -118,12 +118,12 @@ const App = () => {
                 <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
             </div>
             <div class="flex flex-col bg-[#f0c1bd] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why1} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
+                <img src={why3} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
                 <h1 class="text-2xl">Many-shot jailbreaking</h1>
             </div>
             <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why1} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
+                <img src={why4} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                 <h3>Featured post</h3>
                 <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
             </div>
@@ -139,12 +139,12 @@ const App = () => {
                 <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
             </div>
             <div class="flex flex-col bg-[#f0c1bd] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why1} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
+                <img src={why5} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
                 <h1 class="text-2xl">Many-shot jailbreaking</h1>
             </div>
             <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why1} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
+                <img src={why6} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                 <h3>Featured post</h3>
                 <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
             </div>
