@@ -34,12 +34,11 @@ import mq18 from './assets/mq18.png'
 import mq19 from './assets/mq19.png'
 import mq20 from './assets/mq20.png'
 import talk from './assets/talk.png'
+import build from './assets/build.png'
 import Marquee from 'react-fast-marquee'
 
 
 const App = () => {
-
-    
   return (
     <>
     <div className="bg-[#FAFAF8] h-full w-full">
@@ -217,27 +216,27 @@ const App = () => {
 
 
         <div className='px-20'>
-            <div className='max-w-4xl mx-16 my-12 px-10  rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
+            <div className='max-w-4xl mx-16 my-12 px-6  rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
                 <div className='px-4 py-10 flex flex-col text-left'>
                     <h1 className='text-2xl font-semibold my-1'>Talk to Claude</h1>
-                    <p className='my-1 text-xl'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
+                    <p className='my-1 text-lg'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
                     <button className="h-12 w-32 my-4 rounded-xl text-md text-white bg-black hover:bg-gray-600 hover:border-gray-600 border border-black">Try Claude</button>
                 </div>
                     
-                <div className='pt-10 '>
+                <div className='pt-6 '>
                     <img src={talk} alt="talk" />
                 </div>
             </div>  
 
             <div className='max-w-4xl ml-44 px-10  rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
                 <div className='px-4 py-10 flex flex-col text-left'>
-                    <h1 className='text-2xl font-semibold my-1'>Talk to Claude</h1>
-                    <p className='my-1 text-xl'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
+                    <h1 className='text-2xl font-semibold my-1'>Build with Claude</h1>
+                    <p className='my-1 text-lg'>Use the API to integrate Claude into you and your customer workflows to let AI transform your business</p>
                     <button className="h-12 w-32 my-4 rounded-xl text-md text-white bg-black hover:bg-gray-600 hover:border-gray-600 border border-black">Try Claude</button>
                 </div>
                     
                 <div className='pt-10 '>
-                    <img src={talk} alt="talk" />
+                    <img src={build} alt="build" />
                 </div>
             </div>       
         </div>
