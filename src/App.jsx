@@ -35,6 +35,9 @@ import mq19 from './assets/mq19.png'
 import mq20 from './assets/mq20.png'
 import talk from './assets/talk.png'
 import build from './assets/build.png'
+import play from './assets/play.png'
+import google from './assets/google.png'
+import apple from './assets/apple.png'
 import Marquee from 'react-fast-marquee'
 
 
@@ -215,30 +218,56 @@ const App = () => {
         </div>   
 
 
-        <div className='px-20'>
-            <div className='max-w-4xl h-72 ml-40 my-12 px-6 rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
-                <div className='px-4 py-10 flex flex-col text-left'>
-                    <h1 className='text-2xl font-semibold my-1'>Talk to Claude</h1>
-                    <p className='my-1 text-lg'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
-                    <button className="h-12 w-32 my-4 rounded-xl text-md text-white bg-black hover:bg-gray-600 hover:border-gray-600 border border-black">Try Claude</button>
-                </div>
-                    
-                <div className='pt-5 '>
+        <div className='px-6 md:px-20'>
+            {/* First Section */}
+            <div className='max-w-4xl h-auto md:h-72 ml-0 md:ml-40 my-12 px-6 rounded-3xl flex flex-col md:flex-row-reverse items-end justify-between bg-[#F0EFEA]'>
+                <div className='pt-5 md:pt-0 order-1 md:order-none'>
                     <img src={talk} alt="talk" />
                 </div>
-            </div>  
 
-            <div className='max-w-4xl h-72 ml-72 px-10  rounded-3xl flex items-start justify-between  bg-black text-white' >
-                <div className='px-4 py-10 flex flex-col text-left'>
-                    <h1 className='text-2xl font-semibold my-1 text-white'>Build with Claude</h1>
-                    <p className='my-1 text-lg  text-white'>Use the API to integrate Claude into you and your <br /> customer workflows to let AI transform your business</p>
-                    <button className="h-12 w-32 my-4 rounded-xl text-md text-black bg-white">Try Claude</button>
+                <div className='px-4 py-6 md:py-10 flex flex-col text-left order-2 md:order-none'>
+                    <h1 className='text-xl md:text-2xl font-semibold my-1'>Talk to Claude</h1>
+                    <p className='my-1 text-base md:text-lg'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
+                    <button className="h-10 md:h-12 w-28 md:w-32 my-4 rounded-xl text-sm md:text-md text-white bg-black hover:bg-gray-600 hover:border-gray-600 border border-black">Try Claude</button>
                 </div>
-                    
-                <div className='pt-6'>
+            </div>
+
+            {/* Second Section */}
+            <div className='max-w-4xl h-auto md:h-72 ml-0 md:ml-72 mb-20 px-6 md:px-10 rounded-3xl flex flex-col md:flex-row items-end justify-between bg-black text-white'>
+                <div className='px-4 py-6 md:py-10 flex flex-col text-left order-1'>
+                    <h1 className='text-xl md:text-2xl font-semibold my-1 text-white'>Build with Claude</h1>
+                    <p className='my-1 text-base md:text-lg text-white'>Use the API to integrate Claude into your and your <br /> customer workflows to let AI transform your business</p>
+                    <button className="h-10 md:h-12 w-28 md:w-32 mt-4 rounded-xl text-sm md:text-md text-black bg-white">Try Claude</button>
+                </div>
+
+                <div className='order-2'>
                     <img src={build} alt="build" />
                 </div>
-            </div>       
+            </div>
+        </div>
+
+
+
+
+
+        <div className='py-20 px-10 flex flex-wrap gap-12 items-center justify-around bg-white'>
+            <div>
+                <img src={play} alt="play" />
+            </div>
+            <div>
+                <div>
+                    <h1 className='text-2xl font-semibold my-1'>Take Claude with you</h1>
+                    <p className='my-1 text-lg'>Talk to Claude, anywhere you go. Brainstorm ideas, get answers, and analyze <br /> images on the go. The Claude apps put the power of frontier intelligence in <br /> your back pocket.</p>
+                    <div className='flex'>
+                        <a href="">
+                            <img src={google} alt="google" className='h-12 mr-4 my-2' />
+                        </a>
+                        <a href="">
+                            <img src={apple} alt="apple" className='h-12 mr-4 my-2' />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
