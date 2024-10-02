@@ -121,30 +121,22 @@ const App = () => {
       
 
       <div class="flex flex-col gap-6 font-sans items-center justify-center mt-16">
-            <div class="flex items-start justify-around gap-10 flex-wrap mt-16">
-                <div class="flex flex-col w-[450px]">
+        <div class="flex items-start justify-around gap-10 flex-wrap mt-16">
+            <div class="flex flex-col w-[450px]">
                 <h1 class="text-2xl font-semibold">Trustworthy</h1>
                 <p class="text-xl">Claude combines best-in-class jailbreak resistance and misuse prevention to mitigate brand risk for our customers.</p>
-                </div>
-
-                <div class="relative flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why3} alt="why1" class="h-36 w-32 mb-12 mt-5 place-self-center group-hover:scale-110 duration-200" />
-                <div class="absolute bottom-16 left-0 right-0 text-center">
-                    <h3 class="text-lg font-semibold">Featured paper</h3>
-                    <h1 class="text-2xl text-black">Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
-                </div>
-                </div>
-
-                <div class="relative flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why4} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200" />
-                <div class="absolute bottom-16 left-0 right-0 text-center">
-                    <h3 class="text-lg font-semibold">Featured paper</h3>
-                    <h1 class="text-2xl text-black">Evaluating and Mitigating Discrimination in Language Model Decisions.</h1>
-                </div>
-                </div>
+            </div>
+            <div class="flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+                <img src={why3} alt="why1" class="h-36 w-32 mb-12 mt-5 place-self-center  group-hover:scale-110 duration-200"/>
+                <h3>Featured paper</h3>
+                <h1 class="text-2xl">Red Teaming Language Models to reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
+            </div>
+            <div class="flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+                <img src={why4} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
+                <h3>Featured paper</h3>
+                <h1 class="text-2xl">Evaluating and Mitigating Discrimination in Language Model Decisions.</h1>
             </div>
         </div>
-
       </div>     
     
       <hr/>
