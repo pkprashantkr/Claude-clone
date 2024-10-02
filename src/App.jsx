@@ -168,17 +168,19 @@ const App = () => {
         <div class="w-full bg-white flex flex-col items-center justify-center mt-16">
             <h1 class="text-2xl mt-6">Leading companies build with Claude</h1>
             <div className="marquee-wrapper overflow-hidden w-full">
-            <div className="marquee-content flex space-x-10 items-center">
-                <img src={mq1} alt="Slack" className="h-12" />
-                <img src={mq1} alt="Sourcegraph" className="h-12" />
-                <img src={mq1} alt="Zoominfo" className="h-12" />
-                <img src={mq1} alt="Asana" className="h-12" />
-                <img src={mq1} alt="AssemblyAI" className="h-12" />
-                <img src={mq1} alt="BCG" className="h-12" />
-                <img src={mq1} alt="Brave" className="h-12" />
+                <div className="marquee-content flex space-x-10 items-center">
+                    <img src={mq1} alt="Slack" className="h-12" />
+                    <img src={mq1} alt="Sourcegraph" className="h-12" />
+                    <img src={mq1} alt="Zoominfo" className="h-12" />
+                    <img src={mq1} alt="Asana" className="h-12" />
+                    <img src={mq1} alt="AssemblyAI" className="h-12" />
+                    <img src={mq1} alt="BCG" className="h-12" />
+                    <img src={mq1} alt="Brave" className="h-12" />
+                </div>
             </div>
-      </div>
         </div>  
+
+        <marquee behavior="" direction="">Marquee</marquee>
     </div>
     </>
   )
