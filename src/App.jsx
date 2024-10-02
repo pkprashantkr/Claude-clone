@@ -127,7 +127,7 @@ const App = () => {
                 <p class="text-xl">Claude combines best-in-class jailbreak resistance and misuse prevention to mitigate brand risk for our customers.</p>
             </div>
             <div class="flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why3} alt="why1" class="h-36 w-36 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
+                <img src={why3} alt="why1" class="h-36 w-32 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
                 <h1 class="text-2xl">Red Teaming Language Models to reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
             </div>
