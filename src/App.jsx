@@ -180,7 +180,7 @@ const App = () => {
             </div>
         </div>  
 
-        <marquee behavior="" direction="" class="flex items-center">
+        <marquee behavior="" direction="" class="flex items-center justify-center flex-row">
             <img src={mq1} alt="mq1" />
             <img src={mq1} alt="mq1" />
             <img src={mq1} alt="mq1" />
