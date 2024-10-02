@@ -216,7 +216,7 @@ const App = () => {
 
 
         <div className='px-20'>
-            <div className='max-w-4xl ml-48 my-12 px-6  rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
+            <div className='max-w-4xl ml-40 my-12 px-6  rounded-3xl flex items-center justify-between  bg-[#F0EFEA]' >
                 <div className='px-4 py-10 flex flex-col text-left'>
                     <h1 className='text-2xl font-semibold my-1'>Talk to Claude</h1>
                     <p className='my-1 text-lg'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
@@ -228,10 +228,10 @@ const App = () => {
                 </div>
             </div>  
 
-            <div className='max-w-4xl ml-80 px-10  rounded-3xl flex items-center justify-between  bg-black text-white' >
+            <div className='max-w-4xl ml-72 px-10  rounded-3xl flex items-center justify-between  bg-black text-white' >
                 <div className='px-4 py-10 flex flex-col text-left'>
                     <h1 className='text-2xl font-semibold my-1 text-white'>Build with Claude</h1>
-                    <p className='my-1 text-lg  text-white'>Use the API to integrate Claude into you and your customer workflows to let AI transform your business</p>
+                    <p className='my-1 text-lg  text-white'>Use the API to integrate Claude into you and your <br /> customer workflows to let AI transform your business</p>
                     <button className="h-12 w-32 my-4 rounded-xl text-md bg-white">Try Claude</button>
                 </div>
                     
