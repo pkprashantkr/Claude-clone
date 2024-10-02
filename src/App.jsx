@@ -128,7 +128,7 @@ const App = () => {
             </div>
             <div class="relative flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why3} alt="why1" class="h-36 w-32 mb-12 mt-5 place-self-center  group-hover:scale-110 duration-200"/>
-                <div class="absolute bottom-16 left-0 right-0 text-center">
+                <div class="absolute bottom-16 left-0 ml-1 text-center">
                     <h3>Featured paper</h3>
                     <h1 class="text-2xl">Red Teaming Language Models to reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
                 </div>
