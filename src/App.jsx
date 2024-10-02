@@ -181,7 +181,7 @@ const App = () => {
         </div>  
 
 
-        <marquee behavior="scroll" direction="left" className="flex items-center justify-center space-x-8">
+        <marquee behavior="scroll" direction="left" class="flex items-center justify-center space-x-8">
             <img src={mq1} alt="mq1" className="h-12" />
             <img src={mq1} alt="mq1" className="h-12" />
             <img src={mq1} alt="mq1" className="h-12" />
