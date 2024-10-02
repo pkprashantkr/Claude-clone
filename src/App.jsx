@@ -33,7 +33,7 @@ import mq17 from './assets/mq17.png'
 import mq18 from './assets/mq18.png'
 import mq19 from './assets/mq19.png'
 import mq20 from './assets/mq20.png'
-
+import talk from './assets/talk.png'
 import Marquee from 'react-fast-marquee'
 
 
@@ -188,7 +188,7 @@ const App = () => {
             </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center mt-20 mb-20 bg-white'>
+        <div className='flex flex-col items-center justify-center my-32 bg-white'>
             <h1 className='text-4xl font-bold text-center mt-20'>Leading companies build <br />with Claude</h1>
             <Marquee autoFill className='mt-6'>
                 <img src={mq1} alt="mq1" className='mx-2 my-12 h-10 '/>
@@ -214,6 +214,22 @@ const App = () => {
             </Marquee>
             <button className="h-12 w-52 rounded-lg text-md text-black bg-white hover:border-gray-500 hover:text-gray-500 border border-black ">Read customer stories</button>
         </div>   
+
+
+        <div className='px-14'>
+            <div className='w-3/4 mx-12 my-10  rounded-xl flex  bg-[#F0EFEA]' >
+                <div className='px-10 py-10 flex flex-col text-left'>
+                    <h1 className='text-xl font-semibold'>Talk to Claude</h1>
+                    <p>Claude is fast, capable, and truly conversational. Work with Claude to help you do your best work</p>
+                    <button className="h-12 w-52 rounded-lg text-md text-white bg-black hover:bg-gray-500 hover:border-gray-500 hover:text-gray-500 border border-black">Try Claude</button>
+                </div>
+                    
+                <div className='px-10 pt-10 flex flex-col text-left'>
+                    <img src={talk} alt="talk" />
+                </div>
+            </div>       
+        </div>
+        
 
     </div>
     </>
