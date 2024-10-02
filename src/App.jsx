@@ -188,7 +188,7 @@ const App = () => {
             </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center mt-20 bg-white'>
+        <div className='flex flex-col items-center justify-center mt-20 mb-20 bg-white'>
             <h1 className='text-4xl font-bold text-center mt-20'>Leading companies build <br />with Claude</h1>
             <Marquee autoFill className='mt-6'>
                 <img src={mq1} alt="mq1" className='mx-2 my-12 h-10 '/>
