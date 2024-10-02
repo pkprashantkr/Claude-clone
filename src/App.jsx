@@ -128,7 +128,7 @@ const App = () => {
             </div>
             <div class="flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why3} alt="why1" class="h-36 w-32 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
-                <h3 class= "absolute" >Featured paper</h3>
+                <h3>Featured paper</h3>
                 <h1 class="text-2xl">Red Teaming Language Models to reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
             </div>
             <div class="flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
@@ -148,7 +148,7 @@ const App = () => {
                 <p class="text-xl">Claude empowers you to deploy AI to business critical use cases, with very low hallucination rates and very high accuracy over a long documents.</p>
             </div>
             <div class="flex flex-col bg-[#CC785C] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
-                <img src={why5} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
+                <img src={why5} alt="why1" class="h-36 w-36 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured post</h3>
                 <h1 class="text-2xl">Claude's Character</h1>
             </div>
