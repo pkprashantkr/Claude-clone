@@ -79,7 +79,7 @@ const App = () => {
           </div>
           </div>
 
-      <div class="flex flex-wrap items-center justify-around mt-32 bg:white">
+      <div class="flex flex-wrap items-center justify-around mt-32 bg-white">
           <div class="w-[550px] m-10 font-sans">
               <h2 class="bg-orange-500 rounded-full inline px-4 py-1 text-white text-md">NEW</h2>
               <h1 class="text-3xl font-semibold mb-3 mt-3"> Introducing Claude 3.5 Sonnet </h1>
@@ -105,12 +105,12 @@ const App = () => {
                   <h1 class="text-2xl font-semibold">Secure</h1>
                   <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
               </div>
-              <div class="flex flex-col bg-[#f0c1bd] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+              <div class="flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                   <img src={why1} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                   <h3>Featured paper</h3>
                   <h1 class="text-2xl">Many-shot jailbreaking</h1>
               </div>
-              <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+              <div class="flex flex-col bg-[#F0EFEA] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                   <img src={why2} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                   <h3>Featured post</h3>
                   <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
@@ -126,12 +126,12 @@ const App = () => {
                 <h1 class="text-2xl font-semibold">Secure</h1>
                 <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
             </div>
-            <div class="flex flex-col bg-[#f0c1bd] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+            <div class="flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why3} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
                 <h1 class="text-2xl">Many-shot jailbreaking</h1>
             </div>
-            <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+            <div class="flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why4} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                 <h3>Featured post</h3>
                 <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
@@ -147,12 +147,12 @@ const App = () => {
                 <h1 class="text-2xl font-semibold">Secure</h1>
                 <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
             </div>
-            <div class="flex flex-col bg-[#f0c1bd] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+            <div class="flex flex-col bg-[#CC785C] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why5} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
                 <h1 class="text-2xl">Many-shot jailbreaking</h1>
             </div>
-            <div class="flex flex-col bg-[#ebdfdf] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
+            <div class="flex flex-col bg-[#F0EFEA] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why6} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
                 <h3>Featured post</h3>
                 <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
