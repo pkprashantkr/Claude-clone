@@ -1,10 +1,19 @@
 import React from 'react'
 import cap1 from './assets/cap1.png'
+import cap2 from './assets/cap2.png'
+import cap3 from './assets/cap3.png'
+import cap4 from './assets/cap4.png'
 import why1 from './assets/why1.png'
+import why2 from './assets/why2.png'
+import why3 from './assets/why3.png'
+import why4 from './assets/why4.png'
+import why5 from './assets/why5.png'
+import why6 from './assets/why6.png'
 import cost from './assets/cost.png'
 import cost2 from './assets/cost2.png'
 import header from './assets/header.gif'
 import blackLogo from './assets/black-logo.png'
+
 
 const App = () => {
   return (
