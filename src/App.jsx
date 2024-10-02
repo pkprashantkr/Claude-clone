@@ -14,10 +14,32 @@ import cost2 from './assets/cost2.png'
 import header from './assets/header.gif'
 import blackLogo from './assets/black-logo.png'
 import mq1 from './assets/mq1.png'
+import mq2 from './assets/mq2.png'
+import mq3 from './assets/mq3.png'
+import mq4 from './assets/mq4.png'
+import mq5 from './assets/mq5.png'
+import mq6 from './assets/mq6.png'
+import mq7 from './assets/mq7.png'
+import mq8 from './assets/mq8.png'
+import mq9 from './assets/mq9.png'
+import mq10 from './assets/mq10.png'
+import mq11 from './assets/mq11.png'
+import mq12 from './assets/mq12.png'
+import mq13 from './assets/mq13.png'
+import mq14 from './assets/mq14.png'
+import mq15 from './assets/mq15.png'
+import mq16 from './assets/mq16.png'
+import mq17 from './assets/mq17.png'
+import mq18 from './assets/mq18.png'
+import mq19 from './assets/mq19.png'
+import mq20 from './assets/mq20.png'
+
 import Marquee from 'react-fast-marquee'
 
 
 const App = () => {
+
+    
   return (
     <>
     <div className="bg-[#FAFAF8] h-full">
@@ -169,12 +191,28 @@ const App = () => {
         <div className='flex flex-col items-center justify-center mt-20 bg-white'>
             <h1 className='text-4xl font-bold text-center mt-20'>Leading companies build <br />with Claude</h1>
             <Marquee autoFill className='mt-6'>
-                <img src={mq1} alt="mq1" className='m-10 h-8 '/>
-                <img src={mq1} alt="mq1" className='m-10 h-8 '/>
-                <img src={mq1} alt="mq1" className='m-10 h-8 '/>
-                <img src={mq1} alt="mq1" className='m-10 h-8 '/>
-                <img src={mq1} alt="mq1" className='m-10 h-8 '/>
+                <img src={mq1} alt="mq1" className='mx-2 my-12 h-10 '/>
+                <img src={mq2} alt="mq2" className='mx-2 my-12 h-10 '/>
+                <img src={mq3} alt="mq3" className='mx-2 my-12 h-10 '/>
+                <img src={mq4} alt="mq4" className='mx-2 my-12 h-10 '/>
+                <img src={mq5} alt="mq5" className='mx-2 my-12 h-10 '/>
+                <img src={mq6} alt="mq6" className='mx-2 my-12 h-10 '/>
+                <img src={mq7} alt="mq7" className='mx-2 my-12 h-10 '/>
+                <img src={mq8} alt="mq8" className='mx-2 my-12 h-10 '/>
+                <img src={mq9} alt="mq9" className='mx-2 my-12 h-10 '/>
+                <img src={mq10} alt="mq10" className='mx-2 my-12 h-10 '/>
+                <img src={mq11} alt="mq11" className='mx-2 my-12 h-10 '/>
+                <img src={mq12} alt="mq12" className='mx-2 my-12 h-10 '/>
+                <img src={mq13} alt="mq13" className='mx-2 my-12 h-10 '/>
+                <img src={mq14} alt="mq14" className='mx-2 my-12 h-10 '/>
+                <img src={mq15} alt="mq15" className='mx-2 my-12 h-10 '/>
+                <img src={mq16} alt="mq16" className='mx-2 my-12 h-10 '/>
+                <img src={mq17} alt="mq17" className='mx-2 my-12 h-10 '/>
+                <img src={mq18} alt="mq18" className='mx-2 my-12 h-10 '/>
+                <img src={mq19} alt="mq19" className='mx-2 my-12 h-10 '/>
+                <img src={mq20} alt="mq20" className='mx-2 my-12 h-10 '/>
             </Marquee>
+            <button className="h-12 w-48 rounded-lg text-md text-black bg-white hover:border-gray-500 hover:text-gray-500 border border-black ">Read the blog post</button>
         </div>   
 
     </div>
