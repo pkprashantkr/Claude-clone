@@ -123,18 +123,18 @@ const App = () => {
       <div class="flex flex-col gap-6 font-sans items-center justify-center mt-16">
         <div class="flex items-start justify-around gap-10 flex-wrap mt-16">
             <div class="flex flex-col w-[450px]">
-                <h1 class="text-2xl font-semibold">Secure</h1>
-                <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
+                <h1 class="text-2xl font-semibold">Trustworthy</h1>
+                <p class="text-xl">Claude combines best-in-class jailbreak resistance and misuse prevention to mitigate brand risk for our customers.</p>
             </div>
             <div class="flex flex-col bg-[#E6E4DD] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why3} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
                 <h3>Featured paper</h3>
-                <h1 class="text-2xl">Many-shot jailbreaking</h1>
+                <h1 class="text-2xl">Red Teaming Language Models to reduce Harms: Methods, Scaling Behaviors, and Lessons Learned.</h1>
             </div>
             <div class="flex flex-col bg-[#EBDBBC] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why4} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
-                <h3>Featured post</h3>
-                <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
+                <h3>Featured paper</h3>
+                <h1 class="text-2xl">Evaluating and Mitigating Discrimination in Language Model Decisions.</h1>
             </div>
         </div>
       </div>     
@@ -144,18 +144,18 @@ const App = () => {
       <div class="flex flex-col gap-6 font-sans items-center justify-center mt-16">
         <div class="flex items-start justify-around gap-10 flex-wrap mt-16">
             <div class="flex flex-col w-[450px]">
-                <h1 class="text-2xl font-semibold">Secure</h1>
-                <p class="text-xl">With accessibility via AWS and GCP, SOC 2 Type II certification, and HIPAA compliance options, Claude adheres to the security practices your enterprise demands.</p>
+                <h1 class="text-2xl font-semibold">Reliable</h1>
+                <p class="text-xl">Claude empowers you to deploy AI to business critical use cases, with very low hallucination rates and very high accuracy over a long documents.</p>
             </div>
             <div class="flex flex-col bg-[#CC785C] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why5} alt="why1" class="h-40 w-40 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
-                <h3>Featured paper</h3>
-                <h1 class="text-2xl">Many-shot jailbreaking</h1>
+                <h3>Featured post</h3>
+                <h1 class="text-2xl">Claude's Character</h1>
             </div>
             <div class="flex flex-col bg-[#F0EFEA] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why6} alt="why1" class="h-40 w-32 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
-                <h3>Featured post</h3>
-                <h1 class="text-2xl">Challenges in red teaming AI systems</h1>
+                <h3>Featured paper</h3>
+                <h1 class="text-2xl">Questions Decomposition improves the Faithfulness of Model-Generated Reasoning</h1>
             </div>
         </div>
       </div>
