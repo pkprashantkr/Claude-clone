@@ -45,7 +45,7 @@ const App = () => {
   return (
     <>
     <div className="bg-[#FAFAF8] h-full w-full">
-      <nav className="w-full h-5 my-0 p-4 ml-2 px-10 flex justify-between">
+      <nav className="w-full h-5 my-0 p-4 pb-10 ml-2 px-10 flex justify-between">
         <img src={blackLogo} alt="logo" class="h-6 w-auto mt-2 ml-2"/>
         <div className="hidden md:flex space-x-5 mr-10 font-sans">
         <div className="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
@@ -71,8 +71,12 @@ const App = () => {
                 <p className="text-2xl my-4">
                     Claude is AI for all of us. Whether you're brainstorming alone or building with a team of thousands, claude is here to help.
                 </p>
-                <button className="h-14 w-36 rounded-lg text-white bg-black text-lg hover:border-gray-700 hover:bg-gray-700">Try Claude</button>
-                <button className="mx-3 h-14 w-48 rounded-lg border border-black hover:border-gray-400 hover:text-gray-400  text-lg ">Get API access</button>
+                <a href="https://claude.ai/login?returnTo=%2F%3F">
+                    <button className="h-14 w-36 rounded-lg text-white bg-black text-lg hover:border-gray-700 hover:bg-gray-700">Try Claude</button>
+                </a>
+                <a href="https://console.anthropic.com/login?returnTo=%2F%3F">
+                    <button className="mx-3 h-14 w-48 rounded-lg border border-black hover:border-gray-400 hover:text-gray-400  text-lg ">Get API access</button>
+                </a>
             </div>
             <div>
                 <img src={header} alt="header" class="w-[600px] h-auto flex-shrink-0 "/>
@@ -110,7 +114,9 @@ const App = () => {
                 <h2 className="bg-orange-500 rounded-full inline px-4 py-1 text-white text-md">NEW</h2>
                 <h1 className="text-3xl font-semibold mb-3 mt-3"> Introducing Claude 3.5 Sonnet </h1>
                 <p className="text-2xl mb-6"> Raising the industry bar for intelligence with the speed and price required for high-volume use cases at scale. </p>
-                <button className="h-12 w-44 rounded-2xl text-white bg-black text-md hover:border-gray-700 hover:bg-gray-700">Read the blog post</button>
+                <a href="https://www.anthropic.com/news/claude-3-5-sonnet">
+                    <button className="h-12 w-44 rounded-2xl text-white bg-black text-md hover:border-gray-700 hover:bg-gray-700">Read the blog post</button>
+                </a>
             </div>
             <div>
                 <img src={cost} alt="cost" class="w-[500px] h-auto flex-shrink-0 p-5"/>
