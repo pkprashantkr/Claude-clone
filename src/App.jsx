@@ -180,7 +180,13 @@ const App = () => {
             </div>
         </div>  
 
-        <marquee behavior="" direction="">Marquee</marquee>
+        <marquee behavior="" direction="">
+            <img src={mq1} alt="mq1" />
+            <img src={mq1} alt="mq1" />
+            <img src={mq1} alt="mq1" />
+            <img src={mq1} alt="mq1" />
+            <img src={mq1} alt="mq1" />
+        </marquee>
     </div>
     </>
   )
