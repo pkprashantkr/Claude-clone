@@ -181,23 +181,14 @@ const App = () => {
         </div>  
 
 
-        <div className="flex flex-col items-center justify-center">
-            <marquee behavior="scroll" direction="left" className="w-full mb-4">
-                <img src={mq1} alt="mq1" className="h-12 mx-auto" />
-            </marquee>
-            <marquee behavior="scroll" direction="left" className="w-full mb-4">
-                <img src={mq1} alt="mq1" className="h-12 mx-auto" />
-            </marquee>
-            <marquee behavior="scroll" direction="left" className="w-full mb-4">
-                <img src={mq1} alt="mq1" className="h-12 mx-auto" />
-            </marquee>
-            <marquee behavior="scroll" direction="left" className="w-full mb-4">
-                <img src={mq1} alt="mq1" className="h-12 mx-auto" />
-            </marquee>
-            <marquee behavior="scroll" direction="left" className="w-full mb-4">
-                <img src={mq1} alt="mq1" className="h-12 mx-auto" />
-            </marquee>
-        </div>
+        <marquee behavior="scroll" direction="left" className="flex items-center justify-center space-x-8">
+            <img src={mq1} alt="mq1" className="h-12" />
+            <img src={mq1} alt="mq1" className="h-12" />
+            <img src={mq1} alt="mq1" className="h-12" />
+            <img src={mq1} alt="mq1" className="h-12" />
+            <img src={mq1} alt="mq1" className="h-12" />
+        </marquee>
+
 
     </div>
     </>
