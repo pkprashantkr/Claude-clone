@@ -151,10 +151,10 @@ const App = () => {
             </div>
             <div class="flex flex-col bg-[#CC785C] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why5} alt="why1" class="h-36 w-36 mb-12 mt-10 place-self-center  group-hover:scale-110 duration-200"/>
-                 
+                <div class="absolute bottom-1 left-0 right-0 text-left ml-6 "></div> 
                     <h3>Featured post</h3>
                     <h1 class="text-2xl">Claude's Character</h1>
-                
+                </div>
             </div>
             <div class="flex flex-col bg-[#F0EFEA] p-6 rounded-3xl w-[400px] h-[350px] group cursor-pointer">
                 <img src={why6} alt="why1" class="h-36 w-28 mb-8 mt-10 place-self-center group-hover:scale-110 duration-200"/>
