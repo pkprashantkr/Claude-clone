@@ -18,7 +18,7 @@ import blackLogo from './assets/black-logo.png'
 const App = () => {
   return (
     <>
-    <div class="bg:[#FAFAF8]">
+    <div class="bg-[#FAFAF8]">
       <nav class="w-full h-8 my-5 ml-2 px-10 flex justify-between ">
         <img src={blackLogo} alt="logo" class="h-6 w-auto mt-2 ml-2"/>
         <div class="hidden md:flex space-x-5 mr-10 font-sans">
