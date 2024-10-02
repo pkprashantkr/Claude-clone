@@ -221,8 +221,8 @@ const App = () => {
         <div className='px-6 md:px-20'>
             {/* First Section */}
             <div className='max-w-4xl h-auto md:h-72 ml-0 md:ml-40 my-12 px-6 rounded-3xl flex flex-col md:flex-row-reverse items-end justify-between bg-[#F0EFEA]'>
-                <div className='pt-5 md:pt-0 order-1 md:order-none'>
-                    <img src={talk} alt="talk" className='h-96 w-auto' />
+                <div className='pt-5 md:pt-0 order-1 md:order-none h-44'>
+                    <img src={talk} alt="talk" />
                 </div>
 
                 <div className='px-2 py-6 md:py-10 flex flex-col text-left order-2 md:order-none'>
