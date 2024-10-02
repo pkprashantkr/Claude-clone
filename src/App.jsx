@@ -13,6 +13,7 @@ import cost from './assets/cost.png'
 import cost2 from './assets/cost2.png'
 import header from './assets/header.gif'
 import blackLogo from './assets/black-logo.png'
+import mq1 from './assets/mq1.png'
 
 
 const App = () => {
@@ -168,11 +169,11 @@ const App = () => {
             <h1>Leading companies build with Claude</h1>
             <div class="marquee-wrapper">
                 <div class="marquee-content flex items-center">
-                    <img src="/assets/mq1.png" alt="mq1" class="h-12"/>
-                    <img src="/assets/mq1.png" alt="mq1" class="h-12"/>
-                    <img src="/assets/mq1.png" alt="mq1" class="h-12"/>
-                    <img src="/assets/mq1.png" alt="mq1" class="h-12"/>
-                    <img src="/assets/mq1.png" alt="mq1" class="h-12"/>
+                    <img src={mq1} alt="mq1" class="h-12"/>
+                    <img src={mq1} alt="mq1" class="h-12"/>
+                    <img src={mq1} alt="mq1" class="h-12"/>
+                    <img src={mq1} alt="mq1" class="h-12"/>
+                    <img src={mq1} alt="mq1" class="h-12"/>
                 </div>
             </div>
         </div>  
