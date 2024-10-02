@@ -165,7 +165,7 @@ const App = () => {
             </div>
         </div>
 
-        <div class="w-full bg-white flex flex-col items-center justify-center mt-12">
+        <div class="w-full bg-white flex flex-col items-center justify-center mt-16">
             <h1>Leading companies build with Claude</h1>
             <div class="marquee-wrapper overflow-hidden w-full bg-pink-200">
                 <div class="marquee-content flex space-x-10 items-center">
