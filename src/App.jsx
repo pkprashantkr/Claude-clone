@@ -212,7 +212,7 @@ const App = () => {
                 <img src={mq19} alt="mq19" className='mx-2 my-12 h-10 '/>
                 <img src={mq20} alt="mq20" className='mx-2 my-12 h-10 '/>
             </Marquee>
-            <button className="h-12 w-48 rounded-lg text-md text-black bg-white hover:border-gray-500 hover:text-gray-500 border border-black ">Read the blog post</button>
+            <button className="h-12 w-52 rounded-lg text-md text-black bg-white hover:border-gray-500 hover:text-gray-500 border border-black ">Read customer stories</button>
         </div>   
 
     </div>
