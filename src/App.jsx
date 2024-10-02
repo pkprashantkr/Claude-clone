@@ -256,10 +256,10 @@ const App = () => {
                     <h1 className='text-2xl font-semibold my-1'>Take Claude with you</h1>
                     <p className='my-1 text-lg'>Talk to Claude, anywhere you go. Brainstorm ideas, get answers, and analyze <br /> images on the go. The Claude apps put the power of frontier intelligence in <br /> your back pocket.</p>
                     <div className='flex'>
-                        <a href="">
+                        <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude&pli=1">
                             <img src={google} alt="google" className='h-12 mr-4 my-2' />
                         </a>
-                        <a href="">
+                        <a href="https://apps.apple.com/us/app/claude-by-anthropic/id6473753684">
                             <img src={apple} alt="apple" className='h-12 mr-4 my-2' />
                         </a>
                     </div>
