@@ -228,7 +228,7 @@ const App = () => {
                 </div>
             </div>  
 
-            <div className='max-w-4xl h-72 ml-72 px-10  rounded-3xl flex items-center justify-between  bg-black text-white' >
+            <div className='max-w-4xl h-72 ml-72 px-10  rounded-3xl flex items-start justify-between  bg-black text-white' >
                 <div className='px-4 py-10 flex flex-col text-left'>
                     <h1 className='text-2xl font-semibold my-1 text-white'>Build with Claude</h1>
                     <p className='my-1 text-lg  text-white'>Use the API to integrate Claude into you and your <br /> customer workflows to let AI transform your business</p>
