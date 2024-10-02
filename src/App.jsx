@@ -166,7 +166,7 @@ const App = () => {
         </div>
 
         <div class="w-full bg-white flex flex-col items-center justify-center mt-16">
-            <h1>Leading companies build with Claude</h1>
+            <h1 class="text-2xl mt-6">Leading companies build with Claude</h1>
             <div className="marquee-wrapper overflow-hidden w-full">
             <div className="marquee-content flex space-x-10 items-center">
                 <img src={mq1} alt="Slack" className="h-12" />
