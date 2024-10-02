@@ -42,8 +42,8 @@ const App = () => {
     
   return (
     <>
-    <div className="bg-[#FAFAF8] h-full">
-      <nav className="w-full h-8 my-5 ml-2 px-10 flex justify-between ">
+    <div className="bg-[#FAFAF8] h-full w-full">
+      <nav className="w-full h-5 my-5 ml-2 px-10 flex justify-between">
         <img src={blackLogo} alt="logo" class="h-6 w-auto mt-2 ml-2"/>
         <div className="hidden md:flex space-x-5 mr-10 font-sans">
         <div className="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
