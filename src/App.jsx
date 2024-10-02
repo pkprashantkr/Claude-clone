@@ -225,7 +225,7 @@ const App = () => {
                     <img src={talk} alt="talk" />
                 </div>
 
-                <div className='px-4 py-6 md:py-10 flex flex-col text-left order-2 md:order-none'>
+                <div className='px-2 py-6 md:py-10 flex flex-col text-left order-2 md:order-none'>
                     <h1 className='text-xl md:text-2xl font-semibold my-1'>Talk to Claude</h1>
                     <p className='my-1 text-base md:text-lg'>Claude is fast, capable, and truly conversational. <br /> Work with Claude to help you do your best work</p>
                     <button className="h-10 md:h-12 w-28 md:w-32 my-4 rounded-xl text-sm md:text-md text-white bg-black hover:bg-gray-600 hover:border-gray-600 border border-black">Try Claude</button>
@@ -245,9 +245,6 @@ const App = () => {
                 </div>
             </div>
         </div>
-
-
-
 
 
         <div className='py-20 px-10 flex flex-wrap gap-12 items-center justify-around bg-white'>
