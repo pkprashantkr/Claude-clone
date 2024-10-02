@@ -168,7 +168,7 @@ const App = () => {
         <div class="w-full bg-white flex flex-col items-center justify-center">
             <h1>Leading companies build with Claude</h1>
             <div class="marquee-wrapper overflow-hidden w-full">
-                <div class="marquee-content flex space-x-10 items-center">
+                <div className="marquee-content flex space-x-10 items-center">
                     <img src={mq1} alt="mq1" class="h-12"/>
                     <img src={mq1} alt="mq1" class="h-12"/>
                     <img src={mq1} alt="mq1" class="h-12"/>
