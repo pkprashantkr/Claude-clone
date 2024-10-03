@@ -255,7 +255,7 @@ const App = () => {
 
         <div className='py-20 px-10 flex flex-wrap gap-3 items-center justify-evenly bg-white'>
             <div>
-                <img src={play} alt="play" className='h-96 '/>
+                <img src={play} alt="play" className='h-full'/>
             </div>
             <div>
                 <div className='flex flex-col flex-wrap'>
