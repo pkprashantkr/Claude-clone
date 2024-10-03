@@ -253,9 +253,9 @@ const App = () => {
         </div>
 
 
-        <div className='py-20 px-10 flex flex-wrap gap-1 items-center justify-evenly bg-white md:py-8'> {/* Adjust padding for mobile */}
+        <div className='py-10 px-10 flex flex-wrap gap-3 items-center justify-evenly bg-white md:py-20'> {/* Adjust padding for mobile */}
             <div>
-                <img src={play} alt="play" className='max-w-full h-[600px] w-[650px] object-contain' /> {/* Responsive image */}
+                <img src={play} alt="play" className='max-w-full h-auto object-contain' /> {/* Responsive image */}
             </div>
             <div>
                 <div className='flex flex-col flex-wrap'>
@@ -271,6 +271,47 @@ const App = () => {
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div className='px-12 py-12 flex flex-col bg-[#F0EFEA]'>
+            <div className='flex flex-wrap items-center justify-between'>
+                <div>
+                    <h1 className='text-3xl font-semibold'>Company News</h1>
+                </div>
+                <div>
+                    <p>See All</p>
+                </div>
+            </div>
+
+            <div className='flex flex-wrap justify-between py-8'>
+                <div className='w-full md:w-1/3 pr-6'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
+                        <p className='py-1 text-md'>Announcements</p>
+                        <h2 className='text-2xl font-semibold'>Introducing Contextual Retrieval</h2>
+                        <p className='text-gray-400 mt-20'>Sep 20, 2024</p>
+                    </div>
+                </div>
+
+                <div className='w-full md:w-1/3 pr-6'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
+                        <p className='py-1 text-md'>Announcements</p>
+                        <h2 className='text-2xl font-semibold'>Salesforce teams up with Anthropic to enhance Einstein capabilities with Claude</h2>
+                        <p className='text-gray-400 mt-14'>Sep 3, 2024</p>
+                    </div>
+                </div>
+
+
+                <div className='w-full md:w-1/3 pr-6'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
+                        <p className='py-1 text-md'>Announcements</p>
+                        <h2 className='text-2xl font-semibold'>Artifacts are now generally available</h2>
+                        <p className='text-gray-400 mt-14'>Aug 27, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
 
