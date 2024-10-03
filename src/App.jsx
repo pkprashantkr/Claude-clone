@@ -197,28 +197,28 @@ const App = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center my-32 bg-white'>
-            <h1 className='text-4xl font-bold text-center my-20'>Leading companies build <br />with Claude</h1>
+            <h1 className='text-4xl font-bold text-center mt-24 mb-10'>Leading companies build <br />with Claude</h1>
             <Marquee autoFill className='mt-2'>
-                <img src={mq1} alt="mq1" className='mx-2 my-8 h-10 '/>
-                <img src={mq2} alt="mq2" className='mx-2 my-8 h-10 '/>
-                <img src={mq3} alt="mq3" className='mx-2 my-8 h-10 '/>
-                <img src={mq4} alt="mq4" className='mx-2 my-8 h-10 '/>
-                <img src={mq5} alt="mq5" className='mx-2 my-8 h-10 '/>
-                <img src={mq6} alt="mq6" className='mx-2 my-8 h-10 '/>
-                <img src={mq7} alt="mq7" className='mx-2 my-8 h-10 '/>
-                <img src={mq8} alt="mq8" className='mx-2 my-8 h-10 '/>
-                <img src={mq9} alt="mq9" className='mx-2 my-8 h-10 '/>
-                <img src={mq10} alt="mq10" className='mx-2 my-8 h-10 '/>
-                <img src={mq11} alt="mq11" className='mx-2 my-8 h-10 '/>
-                <img src={mq12} alt="mq12" className='mx-2 my-8 h-10 '/>
-                <img src={mq13} alt="mq13" className='mx-2 my-8 h-10 '/>
-                <img src={mq14} alt="mq14" className='mx-2 my-8 h-10 '/>
-                <img src={mq15} alt="mq15" className='mx-2 my-8 h-10 '/>
-                <img src={mq16} alt="mq16" className='mx-2 my-8 h-10 '/>
-                <img src={mq17} alt="mq17" className='mx-2 my-8 h-10 '/>
-                <img src={mq18} alt="mq18" className='mx-2 my-8 h-10 '/>
-                <img src={mq19} alt="mq19" className='mx-2 my-8 h-10 '/>
-                <img src={mq20} alt="mq20" className='mx-2 my-8 h-10 '/>
+                <img src={mq1} alt="mq1" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq2} alt="mq2" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq3} alt="mq3" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq4} alt="mq4" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq5} alt="mq5" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq6} alt="mq6" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq7} alt="mq7" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq8} alt="mq8" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq9} alt="mq9" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq10} alt="mq10" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq11} alt="mq11" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq12} alt="mq12" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq13} alt="mq13" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq14} alt="mq14" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq15} alt="mq15" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq16} alt="mq16" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq17} alt="mq17" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq18} alt="mq18" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq19} alt="mq19" className='mx-2 mt-4 mb-14 h-10 '/>
+                <img src={mq20} alt="mq20" className='mx-2 mt-4 mb-14 h-10 '/>
             </Marquee>
             <button className="h-12 w-52 rounded-lg text-md text-black bg-white hover:border-gray-500 hover:text-gray-500 border border-black mb-20">Read customer stories</button>
         </div>   
@@ -253,12 +253,12 @@ const App = () => {
         </div>
 
 
-        <div className='py-20 px-10 flex flex-wrap gap-6 items-center justify-evenly bg-white'>
+        <div className='py-20 px-10 flex flex-wrap gap-3 items-center justify-evenly bg-white'>
             <div>
-                <img src={play} alt="play" cl/>
+                <img src={play} alt="play" className='h-96 '/>
             </div>
             <div>
-                <div>
+                <div className='flex flex-col flex-wrap'>
                     <h1 className='text-2xl font-semibold my-1'>Take Claude with you</h1>
                     <p className='my-1 text-lg'>Talk to Claude, anywhere you go. Brainstorm ideas, get answers, and analyze <br /> images on the go. The Claude apps put the power of frontier intelligence in <br /> your back pocket.</p>
                     <div className='flex'>
