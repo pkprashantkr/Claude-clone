@@ -39,36 +39,109 @@ import play from './assets/play.png'
 import google from './assets/google.png'
 import apple from './assets/apple.png'
 import Marquee from 'react-fast-marquee'
+import whiteLogo from './assets/whiteLogo.png'
+
 
 
 const App = () => {
   return (
     <>
     <div className="bg-[#FAFAF8] h-full w-full">
-      <nav className="w-full h-5 my-0 p-4 pb-10 ml-2 px-10 flex justify-between">
-        <img src={blackLogo} alt="logo" class="h-6 w-auto mt-2 ml-2"/>
-        <div className="hidden md:flex space-x-5 mr-10 font-sans">
+    <nav className="w-full h-20 p-4 flex justify-between items-center">
+    <img src={blackLogo} alt="logo" className="h-6 w-auto"/>
+
+    {/* Hamburger Menu for Mobile */}
+    <div className="md:hidden">
+        <button 
+            id="hamburger" 
+            className="flex items-center justify-center text-gray-800 hover:text-black focus:outline-none"
+            onClick={() => {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+            }}
+        >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    {/* Desktop Menu */}
+    <div className="hidden md:flex space-x-5 font-sans mr-10">
         <div className="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
-            <a href="#" class="px-2 py-">Claude</a>
+            <a href="#" className="px-2 py-2">Claude</a>
             <ul className="absolute left-0 hidden mt-0 w-30 bg-white rounded-md shadow-2xl border border-gray-100 text-gray-400 group-hover:block hover:text-black cursor-pointer">
                 <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Overview</li>
                 <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Team</li>
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Entreprise</li>
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Team</li>
+                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Enterprise</li>
                 <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">API</li>
             </ul>
         </div>
-                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Researchers</a>
-                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Company</a>
-                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Careers</a>
-                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">News</a>
-        </div>        
-        </nav>
+        
+        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Researchers</a>
+        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Company</a>
+        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Careers</a>
+        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">News</a>
+    </div>
+
+    {/* Mobile Menu */}
+    <div className="fixed inset-0 bg-black text-4xl shadow-md hidden z-50" id="mobile-menu">
+        <div className="flex flex-col p-4 h-full">
+            {/* Logo and Close Button in Flex Container */}
+            <div className="flex justify-between items-end mx-6 mb-14">
+                <img src={whiteLogo} alt="logo" className='h-7'/>
+                <button 
+                    className="text-white text-4xl"
+                    onClick={() => {
+                        const menu = document.getElementById('mobile-menu');
+                        menu.classList.add('hidden'); // Hide the mobile menu
+                    }}
+                >
+                    &times; {/* Close Icon */}
+                </button>
+            </div>
+
+            {/* Claude with Dropdown */}
+            <div className="relative group">
+                <div className="text-white hover:text-gray-500 text-md font-medium py-2 flex justify-between items-center cursor-pointer px-6">
+                    <span>Claude</span>
+                    <svg className="w-96 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5H7z" />
+                    </svg>
+                </div>
+                <ul className="absolute left-0 hidden bg-white rounded-2xl ml-60 shadow-md w-44 border border-none text-white group-hover:block text-center">
+                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Overview</li>
+                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Team</li>
+                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Enterprise</li>
+                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">API</li>
+                </ul>
+            </div>
+
+            <div className="text-white hover:text-gray-500 text-md font-medium py-2  px-6">
+                <a href="#">Researchers</a>
+            </div>
+            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                <a href="#">Company</a>
+            </div>
+            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                <a href="#">Careers</a>
+            </div>
+            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                <a href="#">News</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
 
         <div className="w-full flex flex-wrap justify-center items-center gap-10">
             <div className="h-auto w-[500px] ml-14">
-                <h1 className="text-7xl">Meet Claude</h1>
-                <p className="text-2xl my-4">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl mt-3">Meet Claude</h1>
+                <p className="w-full max-w-[600px] text-xl sm:text-2xl my-4">
                     Claude is AI for all of us. Whether you're brainstorming alone or building with a team of thousands, claude is here to help.
                 </p>
                 <a href="https://claude.ai/login?returnTo=%2F%3F">
@@ -113,7 +186,7 @@ const App = () => {
             <div className="w-[550px] m-10 font-sans">
                 <h2 className="bg-orange-500 rounded-full inline px-4 py-1 text-white text-md">NEW</h2>
                 <h1 className="text-3xl font-semibold mb-3 mt-3"> Introducing Claude 3.5 Sonnet </h1>
-                <p className="text-2xl mb-6"> Raising the industry bar for intelligence with the speed and price required for high-volume use cases at scale. </p>
+                <p className="mb-6 w-full max-w-[600px] text-xl sm:text-2xl"> Raising the industry bar for intelligence with the speed and price required for high-volume use cases at scale. </p>
                 <a href="https://www.anthropic.com/news/claude-3-5-sonnet">
                     <button className="h-12 w-44 rounded-2xl text-white bg-black text-md hover:border-gray-700 hover:bg-gray-700">Read the blog post</button>
                 </a>
@@ -123,15 +196,18 @@ const App = () => {
             </div>
         </div>
         
-        <div className="flex flex-col gap-6 items-center justify-center text-center font-sans mt-20">
-            <h1 className="text-5xl font-semibold">The Claude model <br/>family</h1>
-            <p className="w-[600px] text-2xl ">Right-sized for any task, the Claude family of models offers the best combination of speed and performance</p>
-            <img src={cost2} alt="cost2" class="px-32 py-10"/>
+        <div className="flex flex-col gap-6 items-center justify-center text-center font-sans mt-20 px-4 sm:px-6 md:px-8 lg:px-10">
+            <h1 className="text-4xl sm:text-5xl font-semibold">The Claude model <br />family</h1>
+            <p className="w-full max-w-[600px] text-xl sm:text-2xl">
+                Right-sized for any task, the Claude family of models offers the best combination of speed and performance
+            </p>
+            <img src={cost2} alt="cost2" className="w-full h-auto max-w-[1200px] px-4 py-10" />
         </div>
+
 
         <div className="flex flex-col gap-6 font-sans items-center justify-center mt-16">
             <h1 className="text-4xl font-semibold">Why Claude?</h1>
-            <p className="text-2xl">Anthropic builds frontier AI models backed by uncompromising integrity</p>
+            <p className="w-full max-w-[700px] text-xl sm:text-2xl text-center">Anthropic builds frontier AI models backed by uncompromising integrity.</p>
             <div className="flex items-start justify-around gap-10 flex-wrap mt-16">
                 <div className="flex flex-col w-[450px]">
                     <h1 className="text-2xl font-semibold">Secure</h1>
