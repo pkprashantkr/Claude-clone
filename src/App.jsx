@@ -275,26 +275,27 @@ const App = () => {
 
 
         <div className='px-12 py-12 flex flex-col bg-[#F0EFEA]'>
-            <div className='flex flex-wrap items-center justify-between'>
+            <div className='flex flex-col md:flex-row items-start justify-between'>
                 <div>
                     <h1 className='text-3xl font-semibold'>Company News</h1>
                 </div>
-                <div>
-                    <p>See All</p>
+                <div className='mt-4 md:mt-0'> {/* Add margin-top for spacing on mobile */}
+                    <p className='cursor-pointer hover:text-gray-400'>See All</p>
                 </div>
             </div>
 
-            <div className='flex flex-wrap justify-between py-8'>
-                <div className='w-full md:w-1/3 pr-6'> 
-                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
-                        <p className='py-1 text-md'>Announcements</p>
+
+            <div className='flex flex-wrap justify-between md:py- py-6'>
+                <div className='w-full md:w-1/3 pr-6 md:my-1 my-3'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow hover:text-gray-400 transition duration-200 cursor-pointer'> {/* Inner content */}
+                        <p className='py-1 text-md'>Products Announcements</p>
                         <h2 className='text-2xl font-semibold'>Introducing Contextual Retrieval</h2>
                         <p className='text-gray-400 mt-20'>Sep 20, 2024</p>
                     </div>
                 </div>
 
-                <div className='w-full md:w-1/3 pr-6'> 
-                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
+                <div className='w-full md:w-1/3 pr-6 md:my-1 my-3'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow hover:text-gray-400 transition duration-200 cursor-pointer'> {/* Inner content */}
                         <p className='py-1 text-md'>Announcements</p>
                         <h2 className='text-2xl font-semibold'>Salesforce teams up with Anthropic to enhance Einstein capabilities with Claude</h2>
                         <p className='text-gray-400 mt-4'>Sep 3, 2024</p>
@@ -302,18 +303,15 @@ const App = () => {
                 </div>
 
 
-                <div className='w-full md:w-1/3 pr-6'> 
-                    <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
+                <div className='w-full md:w-1/3 pr-6 md:my-1 my-3'> 
+                    <div className='bg-white px-6 py-5 rounded-3xl shadow hover:text-gray-400 transition duration-200 cursor-pointer'> {/* Inner content */}
                         <p className='py-1 text-md'>Announcements</p>
                         <h2 className='text-2xl font-semibold'>Artifacts are now generally available</h2>
                         <p className='text-gray-400 mt-20'>Aug 27, 2024</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
 
         
 
