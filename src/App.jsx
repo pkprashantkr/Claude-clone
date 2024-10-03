@@ -297,7 +297,7 @@ const App = () => {
                     <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
                         <p className='py-1 text-md'>Announcements</p>
                         <h2 className='text-2xl font-semibold'>Salesforce teams up with Anthropic to enhance Einstein capabilities with Claude</h2>
-                        <p className='text-gray-400 mt-14'>Sep 3, 2024</p>
+                        <p className='text-gray-400 mt-4'>Sep 3, 2024</p>
                     </div>
                 </div>
 
@@ -306,7 +306,7 @@ const App = () => {
                     <div className='bg-white px-6 py-5 rounded-3xl shadow'> {/* Inner content */}
                         <p className='py-1 text-md'>Announcements</p>
                         <h2 className='text-2xl font-semibold'>Artifacts are now generally available</h2>
-                        <p className='text-gray-400 mt-14'>Aug 27, 2024</p>
+                        <p className='text-gray-400 mt-20'>Aug 27, 2024</p>
                     </div>
                 </div>
             </div>
