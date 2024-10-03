@@ -255,7 +255,7 @@ const App = () => {
 
         <div className='py-20 px-10 flex flex-wrap gap-3 items-center justify-evenly bg-white md:py-20'> {/* Adjust padding for mobile */}
             <div>
-                <img src={play} alt="play" className='max-w-full h-[550px] w-[650px] object-contain' /> {/* Responsive image */}
+                <img src={play} alt="play" className='max-w-full h-[570px] w-[650px] object-contain' /> {/* Responsive image */}
             </div>
             <div>
                 <div className='flex flex-col flex-wrap'>
