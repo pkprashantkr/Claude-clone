@@ -255,7 +255,7 @@ const App = () => {
 
         <div className='py-20 px-10 flex flex-wrap gap-3 items-center justify-evenly bg-white'>
             <div>
-                <img src={play} alt="play" className='h-[600px] w-[700px]' /> {/* Adjust the height and width as needed */}
+                <img src={play} alt="play" className='h-[550px] w-[600px]' /> {/* Adjust the height and width as needed */}
             </div>
             <div>
                 <div className='flex flex-col flex-wrap'>
