@@ -253,7 +253,7 @@ const App = () => {
         </div>
 
 
-        <div className='py-20 px-10 flex flex-wrap gap-1 items-center justify-evenly bg-white md:py-12'> {/* Adjust padding for mobile */}
+        <div className='py-20 px-10 flex flex-wrap gap-1 items-center justify-evenly bg-white md:py-8'> {/* Adjust padding for mobile */}
             <div>
                 <img src={play} alt="play" className='max-w-full h-[600px] w-[650px] object-contain' /> {/* Responsive image */}
             </div>
