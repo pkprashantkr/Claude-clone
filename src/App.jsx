@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react';
 import cap1 from './assets/cap1.png'
 import cap2 from './assets/cap2.png'
 import cap3 from './assets/cap3.png'
@@ -12,7 +12,8 @@ import why6 from './assets/why6.png'
 import cost from './assets/cost.png'
 import cost2 from './assets/cost2.png'
 import header from './assets/header.gif'
-import blackLogo from './assets/black-logo.png'
+import blackLogo from './assets/blackLogo.png'
+import whiteLogo from './assets/whiteLogos.png'
 import mq1 from './assets/mq1.png'
 import mq2 from './assets/mq2.png'
 import mq3 from './assets/mq3.png'
@@ -39,104 +40,100 @@ import play from './assets/play.png'
 import google from './assets/google.png'
 import apple from './assets/apple.png'
 import Marquee from 'react-fast-marquee'
-import whiteLogo from './assets/whiteLogo.png'
 
 
 
 const App = () => {
+
+
   return (
     <>
     <div className="bg-[#FAFAF8] h-full w-full">
-    <nav className="w-full h-20 p-4 flex justify-between items-center">
-    <img src={blackLogo} alt="logo" className="h-6 w-auto"/>
+        <nav className="w-full h-20 p-4 flex justify-between items-center bg-[#FAFAF8] sticky top-0 z-50">
+            <img src={blackLogo} alt="logo" className="h-6 pl-10 w-auto"/>
 
-    {/* Hamburger Menu for Mobile */}
-    <div className="md:hidden">
-        <button 
-            id="hamburger" 
-            className="flex items-center justify-center text-gray-800 hover:text-black focus:outline-none"
-            onClick={() => {
-                const menu = document.getElementById('mobile-menu');
-                menu.classList.toggle('hidden');
-            }}
-        >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-    </div>
-
-    {/* Desktop Menu */}
-    <div className="hidden md:flex space-x-5 font-sans mr-10">
-        <div className="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
-            <a href="#" className="px-2 py-2">Claude</a>
-            <ul className="absolute left-0 hidden mt-0 w-30 bg-white rounded-md shadow-2xl border border-gray-100 text-gray-400 group-hover:block hover:text-black cursor-pointer">
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Overview</li>
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Team</li>
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Enterprise</li>
-                <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">API</li>
-            </ul>
-        </div>
-        
-        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Researchers</a>
-        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Company</a>
-        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Careers</a>
-        <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">News</a>
-    </div>
-
-    {/* Mobile Menu */}
-    <div className="fixed inset-0 bg-black text-4xl shadow-md hidden z-50" id="mobile-menu">
-        <div className="flex flex-col p-4 h-full">
-            {/* Logo and Close Button in Flex Container */}
-            <div className="flex justify-between items-end mx-6 mb-14">
-                <img src={whiteLogo} alt="logo" className='h-7'/>
+            {/* Hamburger Menu for Mobile */}
+            <div className="md:hidden">
                 <button 
-                    className="text-white text-4xl"
+                    id="hamburger" 
+                    className="flex items-center justify-center text-gray-800 hover:text-black focus:outline-none"
                     onClick={() => {
                         const menu = document.getElementById('mobile-menu');
-                        menu.classList.add('hidden'); // Hide the mobile menu
+                        menu.classList.toggle('hidden');
                     }}
                 >
-                    &times; {/* Close Icon */}
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
                 </button>
             </div>
 
-            {/* Claude with Dropdown */}
-            <div className="relative group">
-                <div className="text-white hover:text-gray-500 text-md font-medium py-2 flex justify-between items-center cursor-pointer px-6">
-                    <span>Claude</span>
-                    <svg className="w-96 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5H7z" />
-                    </svg>
+            {/* Desktop Menu */}
+            <div className="hidden md:flex space-x-5 font-sans mr-10">
+                <div className="pop-up relative pt-2 text-gray-800 hover:text-black text-md font-medium group"> 
+                    <a href="#" className="px-2 py-2">Claude</a>
+                    <ul className="absolute left-0 hidden mt-0 w-30 bg-white rounded-md shadow-2xl border border-gray-100 text-gray-400 group-hover:block hover:text-black cursor-pointer">
+                        <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Overview</li>
+                        <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Team</li>
+                        <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">Enterprise</li>
+                        <li className="px-4 py-1 text-gray-400 hover:text-black cursor-pointer">API</li>
+                    </ul>
                 </div>
-                <ul className="absolute left-0 hidden bg-white rounded-2xl ml-60 shadow-md w-44 border border-none text-white group-hover:block text-center">
-                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Overview</li>
-                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Team</li>
-                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Enterprise</li>
-                    <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">API</li>
-                </ul>
+                
+                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Researchers</a>
+                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Company</a>
+                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">Careers</a>
+                <a href="#" className="px-2 py-2 text-gray-800 hover:text-black text-md font-medium">News</a>
             </div>
 
-            <div className="text-white hover:text-gray-500 text-md font-medium py-2  px-6">
-                <a href="#">Researchers</a>
-            </div>
-            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
-                <a href="#">Company</a>
-            </div>
-            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
-                <a href="#">Careers</a>
-            </div>
-            <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
-                <a href="#">News</a>
-            </div>
-        </div>
-    </div>
-</nav>
+            {/* Mobile Menu */}
+            <div className="fixed inset-0 bg-black text-4xl shadow-md hidden z-50" id="mobile-menu">
+                <div className="flex flex-col p-4 h-full">
+                    {/* Logo and Close Button in Flex Container */}
+                    <div className="flex justify-between items-end mx-6 mb-14">
+                        <img src={whiteLogo} alt="logo" className='h-7'/>
+                        <button 
+                            className="text-white text-4xl"
+                            onClick={() => {
+                                const menu = document.getElementById('mobile-menu');
+                                menu.classList.add('hidden'); // Hide the mobile menu
+                            }}
+                        >
+                            &times; {/* Close Icon */}
+                        </button>
+                    </div>
 
+                    {/* Claude with Dropdown */}
+                    <div className="relative group">
+                        <div className="text-white hover:text-gray-500 text-md font-medium py-2 flex justify-between items-center cursor-pointer px-6">
+                            <span>Claude</span>
+                            <svg className="w-96 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5H7z" />
+                            </svg>
+                        </div>
+                        <ul className="absolute left-0 hidden bg-white rounded-2xl ml-60 shadow-md w-44 border border-none text-white group-hover:block text-center">
+                            <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Overview</li>
+                            <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Team</li>
+                            <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">Enterprise</li>
+                            <li className="px-4 py-2 text-gray-400 hover:text-black text-3xl cursor-pointer">API</li>
+                        </ul>
+                    </div>
 
-
-
-
+                    <div className="text-white hover:text-gray-500 text-md font-medium py-2  px-6">
+                        <a href="#">Researchers</a>
+                    </div>
+                    <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                        <a href="#">Company</a>
+                    </div>
+                    <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div className="text-white hover:text-gray-500 text-md font-medium py-2 px-6">
+                        <a href="#">News</a>
+                    </div>
+                </div>
+            </div>      
+        </nav>
 
         <div className="w-full flex flex-wrap justify-center items-center gap-10">
             <div className="h-auto w-[500px] ml-14">
@@ -388,6 +385,60 @@ const App = () => {
                 </div>
             </div>
         </div>
+
+        <footer className='bg-black px-8 md:px-16 py-10 md:pb-20 flex flex-col md:flex-row items-start justify-between gap-10'>
+            {/* Logo Section */}
+            <div className='flex-shrink-0'>
+                <img src={whiteLogo} alt="logo" className='h-8 mr-24' />
+            </div>
+
+            {/* Column 1: Main Links */}
+            <div className='flex flex-col items-start justify-end text-white'>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Claude</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>API</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Team</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Pricing</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Research</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Company</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Customers</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>News</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Careers</p>
+            </div>
+
+            {/* Horizontal line after each column on mobile */}
+            <hr className="border-t border-gray-600 w-full md:hidden" />
+
+            {/* Column 2: Support Links */}
+            <div className='flex flex-col items-start justify-end text-white'>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Press Inquiries</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Support</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Status</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Availability</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Twitter</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>LinkedIn</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>YouTube</p>
+            </div>
+
+            {/* Horizontal line after each column on mobile */}
+            <hr className="border-t border-gray-600 w-full md:hidden" />
+
+            {/* Column 3: Legal Links */}
+            <div className='flex flex-col items-start justify-end text-white'>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Terms of Service – <br /> Consumer</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Terms of Service – <br /> Commercial</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Privacy Policy</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Usage Policy</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Responsible Disclosure <br /> Policy</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Compliance</p>
+                <p className='pb-2 md:pb-4 text-sm md:text-lg text-[#ada489]'>Privacy Choices</p>
+            </div>
+
+            {/* Column 4: Copyright */}
+            <div className='flex-shrink-0'>
+                <p className='pb-4 text-sm md:text-lg text-[#ada489]'>&copy; 2024 Anthropic PBC</p>
+            </div>
+        </footer>
+
 
         
 
