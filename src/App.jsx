@@ -50,7 +50,7 @@ const App = () => {
     <>
     <div className="bg-[#FAFAF8] h-full w-full">
         <nav className="w-full h-20 p-4 flex justify-between items-center bg-[#FAFAF8] sticky top-0 z-50">
-            <img src={blackLogo} alt="logo" className="h-6 pl-10 w-auto"/>
+            <img src={blackLogo} alt="logo" className="h-5 pl-10 w-auto"/>
 
             {/* Hamburger Menu for Mobile */}
             <div className="md:hidden">
