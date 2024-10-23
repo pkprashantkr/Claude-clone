@@ -438,11 +438,7 @@ const App = () => {
                 <p className='pb-4 text-sm md:text-lg text-[#ada489]'>&copy; 2024 Anthropic PBC</p>
             </div>
         </footer>
-
-
-        
-
-    </div>
+        </div>
     </>
   )
 }
